@@ -148,6 +148,7 @@ $ head output_chr22.vcf -n 20 | cut -f 1-10
 
 ```
 
+As you can see. The imputation results are exported in variant calling format (VCF) containing the imputed genotypes and imputation quality scores in the form of class probabilities (Paa:Pab:Pbb) for each one of the three possible genotypes (homozygous reference, heterozygous, and homozygous alternate allele). The probabilities can be used for quality control of the imputation results. 
  
 ## Reference
 Dias R, Evans D, Chen SF, Chen KY, Chan L, Torkamani A. Rapid, Reference-Free Human Genotype Imputation with Denoising Autoencoders. 2022. In press.
