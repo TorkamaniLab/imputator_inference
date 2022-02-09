@@ -149,6 +149,9 @@ $ head output_chr22.vcf -n 20 | cut -f 1-10
 ```
 
 As you can see. The imputation results are exported in variant calling format (VCF) containing the imputed genotypes and imputation quality scores in the form of class probabilities (Paa:Pab:Pbb) for each one of the three possible genotypes (homozygous reference, heterozygous, and homozygous alternate allele). The probabilities can be used for quality control of the imputation results. 
+
+The output nodes of the autoencoder (AP, BP) range between 0 and 1, split into three genotype classes (homozygous reference = Paa, alternate = Pbb, and heterozygous = Pab).
+Paa, Pab, Pbb are probabilities normalized using the Softmax function. The normalized outputs can also be regarded as probabilities and can be combined for the calculation of alternative allele dosage, genotype probabilities, and as a measure of imputation quality.
  
 ## Reference
 Dias R, Evans D, Chen SF, Chen KY, Chan L, Torkamani A. Rapid, Reference-Free Human Genotype Imputation with Denoising Autoencoders. 2022. In press.
