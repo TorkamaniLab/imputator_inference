@@ -46,7 +46,7 @@ Here is an example with wget:
 
 ```
 # download
-wget https://www.dropbox.com/sh/ygugizjvxraf010/AADrQoBCPe4XhtwiHLXn2ZWia?dl=0 -O best_model_weights.zip
+wget https://www.dropbox.com/s/bicnrx0alkg6a0s/best_model_weights.zip -O best_model_weights.zip
 # extract the compressed folder
 unzip best_model_weights.zip
 ```
